@@ -1,24 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Footer } from "@/components/site/Footer";
+import { Hero } from "@/components/site/Hero";
+import { Problem } from "@/components/site/Problem";
+import { TrustedBy } from "@/components/site/TrustedBy";
+import { Products } from "@/components/site/Products";
+import { PlatformDashboard } from "@/components/site/PlatformDashboard";
+import { Benefits } from "@/components/site/Benefits";
+import { Pricing } from "@/components/site/Pricing";
+import { Statistics } from "@/components/site/Statistics";
+import { Testimonials } from "@/components/site/Testimonials";
+import { FAQ } from "@/components/site/FAQ";
+import { CTA } from "@/components/site/CTA";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Proofza — Evidence Operations Platform for Compliance Teams" },
+      { name: "description", content: "Centralise audit evidence, assign ownership and monitor readiness for SOC 2, ISO 27001, GDPR and HIPAA. Built for compliance teams." },
+      { property: "og:title", content: "Proofza — Evidence Operations Platform" },
+      { property: "og:description", content: "Audit evidence. Finally organised. Prepare every certification without chasing documents." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <Problem />
+      <TrustedBy />
+      <Products />
+      <PlatformDashboard />
+      <Benefits />
+      <Pricing />
+      <Statistics />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+      <Footer />
     </div>
   );
 }

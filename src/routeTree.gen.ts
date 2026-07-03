@@ -9,38 +9,141 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SigninRouteImport } from './routes/signin'
+import { Route as RequestDemoRouteImport } from './routes/request-demo'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProductsVaultRouteImport } from './routes/products.vault'
+import { Route as ProductsOwnersRouteImport } from './routes/products.owners'
+import { Route as ProductsAuditRouteImport } from './routes/products.audit'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SigninRoute = SigninRouteImport.update({
+  id: '/signin',
+  path: '/signin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RequestDemoRoute = RequestDemoRouteImport.update({
+  id: '/request-demo',
+  path: '/request-demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsVaultRoute = ProductsVaultRouteImport.update({
+  id: '/products/vault',
+  path: '/products/vault',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsOwnersRoute = ProductsOwnersRouteImport.update({
+  id: '/products/owners',
+  path: '/products/owners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsAuditRoute = ProductsAuditRouteImport.update({
+  id: '/products/audit',
+  path: '/products/audit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/request-demo': typeof RequestDemoRoute
+  '/signin': typeof SigninRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/products/audit': typeof ProductsAuditRoute
+  '/products/owners': typeof ProductsOwnersRoute
+  '/products/vault': typeof ProductsVaultRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/request-demo': typeof RequestDemoRoute
+  '/signin': typeof SigninRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/products/audit': typeof ProductsAuditRoute
+  '/products/owners': typeof ProductsOwnersRoute
+  '/products/vault': typeof ProductsVaultRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/request-demo': typeof RequestDemoRoute
+  '/signin': typeof SigninRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/products/audit': typeof ProductsAuditRoute
+  '/products/owners': typeof ProductsOwnersRoute
+  '/products/vault': typeof ProductsVaultRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/request-demo'
+    | '/signin'
+    | '/sitemap.xml'
+    | '/products/audit'
+    | '/products/owners'
+    | '/products/vault'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/request-demo'
+    | '/signin'
+    | '/sitemap.xml'
+    | '/products/audit'
+    | '/products/owners'
+    | '/products/vault'
+  id:
+    | '__root__'
+    | '/'
+    | '/request-demo'
+    | '/signin'
+    | '/sitemap.xml'
+    | '/products/audit'
+    | '/products/owners'
+    | '/products/vault'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  RequestDemoRoute: typeof RequestDemoRoute
+  SigninRoute: typeof SigninRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  ProductsAuditRoute: typeof ProductsAuditRoute
+  ProductsOwnersRoute: typeof ProductsOwnersRoute
+  ProductsVaultRoute: typeof ProductsVaultRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signin': {
+      id: '/signin'
+      path: '/signin'
+      fullPath: '/signin'
+      preLoaderRoute: typeof SigninRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/request-demo': {
+      id: '/request-demo'
+      path: '/request-demo'
+      fullPath: '/request-demo'
+      preLoaderRoute: typeof RequestDemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +151,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/vault': {
+      id: '/products/vault'
+      path: '/products/vault'
+      fullPath: '/products/vault'
+      preLoaderRoute: typeof ProductsVaultRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products/owners': {
+      id: '/products/owners'
+      path: '/products/owners'
+      fullPath: '/products/owners'
+      preLoaderRoute: typeof ProductsOwnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products/audit': {
+      id: '/products/audit'
+      path: '/products/audit'
+      fullPath: '/products/audit'
+      preLoaderRoute: typeof ProductsAuditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  RequestDemoRoute: RequestDemoRoute,
+  SigninRoute: SigninRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  ProductsAuditRoute: ProductsAuditRoute,
+  ProductsOwnersRoute: ProductsOwnersRoute,
+  ProductsVaultRoute: ProductsVaultRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
