@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, ShieldCheck, Clock, FileCheck2 } from "lucide-react";
-import logo from "@/assets/proofza-logo.svg.asset.json";
+import logoUrl from "@/assets/proofza-logo.svg?url";
 
 export const Route = createFileRoute("/request-demo")({
   head: () => ({
@@ -18,7 +18,7 @@ function RequestDemo() {
       <header className="border-b border-hairline">
         <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo.url} alt="Proofza" className="h-7 w-auto" />
+            <img src={logoUrl} alt="Proofza" className="h-7 w-auto" />
           </Link>
           <Link to="/signin" className="text-sm text-slate hover:text-navy">Sign in</Link>
         </div>

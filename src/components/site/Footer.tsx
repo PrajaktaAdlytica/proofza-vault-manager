@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/proofza-logo.svg.asset.json";
+import logoUrl from "@/assets/proofza-logo.svg?url";
 
 export function Footer() {
   const cols = [
@@ -33,7 +33,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-6">
           <div className="lg:col-span-2">
-            <img src={logo.url} alt="Proofza" className="h-7 w-auto mb-5" />
+            <img src={logoUrl} alt="Proofza" className="h-7 w-auto mb-5" />
             <p className="text-sm text-slate-mute max-w-xs leading-relaxed">
               Evidence operations platform for compliance teams preparing SOC 2, ISO 27001, GDPR and HIPAA certifications.
             </p>
