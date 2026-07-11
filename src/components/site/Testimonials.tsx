@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Proofza helped us cut audit prep from six weeks to nine days. Evidence is collected the moment work happens, not the week before the auditor arrives.",
+    quote: "Proofexa helped us cut audit prep from six weeks to nine days. Evidence is collected the moment work happens, not the week before the auditor arrives.",
     name: "Anna Kowalska",
     role: "Head of Compliance",
     company: "Warsaw Digital",

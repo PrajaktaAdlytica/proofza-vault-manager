@@ -16,9 +16,9 @@ import { CTA } from "@/components/site/CTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Proofza — Evidence Operations Platform for Compliance Teams" },
+      { title: "Proofexa — Evidence Operations Platform for Compliance Teams" },
       { name: "description", content: "Centralise audit evidence, assign ownership and monitor readiness for SOC 2, ISO 27001, GDPR and HIPAA. Built for compliance teams." },
-      { property: "og:title", content: "Proofza — Evidence Operations Platform" },
+      { property: "og:title", content: "Proofexa — Evidence Operations Platform" },
       { property: "og:description", content: "Audit evidence. Finally organised. Prepare every certification without chasing documents." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

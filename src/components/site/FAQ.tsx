@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
 const items = [
-  { q: "What is an evidence operations platform?", a: "Proofza centralises every screenshot, ticket, policy, email and file used to prove compliance controls. Instead of gathering evidence during each audit, your team maintains a continuously-updated evidence library with clear ownership and verification." },
-  { q: "Which frameworks does Proofza support?", a: "Proofza tracks readiness for SOC 2 Type I & II, ISO 27001, ISO 27701, GDPR, HIPAA, PCI DSS and custom internal frameworks. Controls map automatically to the evidence you collect." },
-  { q: "How does Proofza integrate with our tools?", a: "Native integrations for Slack, GitHub, Jira, Google Drive, Notion, Okta, AWS and 40+ vendor systems. Evidence is pulled automatically and grouped by control." },
-  { q: "Where is our data stored?", a: "All customer data is stored on EU-hosted infrastructure with encryption at rest and in transit. Proofza is SOC 2 Type II certified and ISO 27001 compliant." },
+  { q: "What is an evidence operations platform?", a: "Proofexa centralises every screenshot, ticket, policy, email and file used to prove compliance controls. Instead of gathering evidence during each audit, your team maintains a continuously-updated evidence library with clear ownership and verification." },
+  { q: "Which frameworks does Proofexa support?", a: "Proofexa tracks readiness for SOC 2 Type I & II, ISO 27001, ISO 27701, GDPR, HIPAA, PCI DSS and custom internal frameworks. Controls map automatically to the evidence you collect." },
+  { q: "How does Proofexa integrate with our tools?", a: "Native integrations for Slack, GitHub, Jira, Google Drive, Notion, Okta, AWS and 40+ vendor systems. Evidence is pulled automatically and grouped by control." },
+  { q: "Where is our data stored?", a: "All customer data is stored on EU-hosted infrastructure with encryption at rest and in transit. Proofexa is SOC 2 Type II certified and ISO 27001 compliant." },
   { q: "How long does implementation take?", a: "Most teams reach 80% audit readiness within two weeks. Our onboarding specialists help map your existing controls and connect evidence sources on day one." },
-  { q: "Can auditors access Proofza directly?", a: "Yes. Read-only auditor accounts let your external auditors review evidence, verification status and audit trails without touching your production data." },
+  { q: "Can auditors access Proofexa directly?", a: "Yes. Read-only auditor accounts let your external auditors review evidence, verification status and audit trails without touching your production data." },
 ];
 
 export function FAQ() {

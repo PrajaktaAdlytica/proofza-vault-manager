@@ -5,13 +5,13 @@ import { Users, Bell, Calendar, Check } from "lucide-react";
 export const Route = createFileRoute("/products/owners")({
   head: () => ({
     meta: [
-      { title: "Proofza Owners — Evidence Ownership & Assignments" },
+      { title: "Proofexa Owners — Evidence Ownership & Assignments" },
       { name: "description", content: "Assign owners to every piece of evidence, automate reminders and eliminate missing documentation." },
     ],
   }),
   component: () => (
     <ProductPage
-      eyebrow="Proofza Owners"
+      eyebrow="Proofexa Owners"
       title="Every control. Every owner."
       subtitle="Ownership dashboard for accountable compliance."
       description="Assign evidence owners, monitor responsibilities and eliminate missing documentation. Automated reminders and clear accountability across every framework."

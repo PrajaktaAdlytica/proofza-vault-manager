@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import logoUrl from "@/assets/proofza-logo.svg?url";
+import logoUrl from "@/assets/proofexa-logo.svg?url";
 
 export const Route = createFileRoute("/signin")({
   head: () => ({
     meta: [
-      { title: "Sign In — Proofza" },
-      { name: "description", content: "Sign in to your Proofza evidence workspace." },
+      { title: "Sign In — Proofexa" },
+      { name: "description", content: "Sign in to your Proofexa evidence workspace." },
     ],
   }),
   component: SignIn,
@@ -20,7 +20,7 @@ function SignIn() {
       <div className="absolute inset-0 blueprint-grid opacity-40" />
       <div className="relative w-full max-w-md bg-white border border-hairline rounded-2xl shadow-xl p-8">
         <Link to="/" className="flex items-center justify-center mb-6">
-          <img src={logoUrl} alt="Proofza" className="h-8 w-auto" />
+          <img src={logoUrl} alt="Proofexa" className="h-8 w-auto" />
         </Link>
         <h1 className="text-2xl font-light text-navy text-center mb-1">Welcome back</h1>
         <p className="text-center text-slate-mute text-sm mb-8">Sign in to your evidence workspace</p>

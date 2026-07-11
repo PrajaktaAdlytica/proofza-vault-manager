@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, ShieldCheck, Clock, FileCheck2 } from "lucide-react";
-import logoUrl from "@/assets/proofza-logo.svg?url";
+import logoUrl from "@/assets/proofexa-logo.svg?url";
 
 export const Route = createFileRoute("/request-demo")({
   head: () => ({
     meta: [
-      { title: "Request a Demo — Proofza" },
-      { name: "description", content: "See how Proofza organises audit evidence and prepares your team for continuous compliance." },
+      { title: "Request a Demo — Proofexa" },
+      { name: "description", content: "See how Proofexa organises audit evidence and prepares your team for continuous compliance." },
     ],
   }),
   component: RequestDemo,
@@ -18,7 +18,7 @@ function RequestDemo() {
       <header className="border-b border-hairline">
         <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoUrl} alt="Proofza" className="h-7 w-auto" />
+            <img src={logoUrl} alt="Proofexa" className="h-7 w-auto" />
           </Link>
           <Link to="/signin" className="text-sm text-slate hover:text-navy">Sign in</Link>
         </div>
@@ -27,7 +27,7 @@ function RequestDemo() {
         <div>
           <div className="eyebrow mb-3">Request a Demo</div>
           <h1 className="text-4xl md:text-5xl font-light text-navy leading-tight mb-4">
-            See Proofza in your<br />evidence workflow.
+            See Proofexa in your<br />evidence workflow.
           </h1>
           <p className="text-lg text-slate-mute leading-relaxed max-w-lg mb-8">
             A 30-minute personalised walkthrough of the evidence library, ownership dashboard and readiness tracking — tailored to your frameworks.
@@ -76,7 +76,7 @@ function RequestDemo() {
               <textarea className="mt-1 w-full min-h-24 px-3 py-2 rounded-lg border border-hairline focus:border-navy focus:ring-2 focus:ring-navy/10 outline-none transition" placeholder="Which frameworks are you preparing for?" />
             </div>
             <label className="flex items-start gap-2 text-xs text-slate-mute">
-              <input type="checkbox" className="mt-0.5" required /> I agree to receive communication from Proofza and understand my data will be handled per the Privacy Policy.
+              <input type="checkbox" className="mt-0.5" required /> I agree to receive communication from Proofexa and understand my data will be handled per the Privacy Policy.
             </label>
             <button type="submit" className="btn-primary w-full">
               Request Demo <Check className="w-4 h-4" />

@@ -5,13 +5,13 @@ import { ShieldCheck, Search, Folder, Check, Upload } from "lucide-react";
 export const Route = createFileRoute("/products/vault")({
   head: () => ({
     meta: [
-      { title: "Proofza Vault — Centralised Evidence Library" },
+      { title: "Proofexa Vault — Centralised Evidence Library" },
       { name: "description", content: "One searchable evidence workspace for policies, screenshots, tickets and files. Automatic verification and version control." },
     ],
   }),
   component: () => (
     <ProductPage
-      eyebrow="Proofza Vault"
+      eyebrow="Proofexa Vault"
       title="Every document. One vault."
       subtitle="Centralised evidence library for continuous compliance."
       description="Collect, verify and version every piece of audit evidence in a single searchable workspace. Policies, screenshots, tickets, emails and files — all mapped to controls, tagged and instantly retrievable."

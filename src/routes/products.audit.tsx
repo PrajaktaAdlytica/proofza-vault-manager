@@ -5,13 +5,13 @@ import { TrendingUp, Check } from "lucide-react";
 export const Route = createFileRoute("/products/audit")({
   head: () => ({
     meta: [
-      { title: "Proofza Audit — Readiness & Framework Coverage" },
+      { title: "Proofexa Audit — Readiness & Framework Coverage" },
       { name: "description", content: "Track audit readiness across every framework, monitor control coverage and identify gaps before your auditor does." },
     ],
   }),
   component: () => (
     <ProductPage
-      eyebrow="Proofza Audit"
+      eyebrow="Proofexa Audit"
       title="Always audit-ready."
       subtitle="Framework coverage and readiness tracking in real time."
       description="Track audit readiness, monitor framework coverage and identify missing controls. See exactly what stands between you and certification, every day."

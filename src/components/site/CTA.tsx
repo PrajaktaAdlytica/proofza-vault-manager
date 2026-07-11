@@ -19,7 +19,7 @@ export function CTA() {
             <Link to="/request-demo" className="btn-emerald">
               Request Demo <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="mailto:hello@proofza.io" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-white/30 text-white hover:bg-white/10 transition">
+            <a href="mailto:hello@proofexa.com" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-white/30 text-white hover:bg-white/10 transition">
               Contact Sales
             </a>
           </div>

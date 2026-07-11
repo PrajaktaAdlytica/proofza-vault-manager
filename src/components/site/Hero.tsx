@@ -93,7 +93,7 @@ function EvidenceFlow() {
               <ShieldCheck className="w-6 h-6 text-white" />
             </div>
             <div>
-              <div className="text-navy font-medium">Proofza Vault</div>
+              <div className="text-navy font-medium">Proofexa Vault</div>
               <div className="text-xs text-slate-mute">Evidence workspace</div>
             </div>
           </div>

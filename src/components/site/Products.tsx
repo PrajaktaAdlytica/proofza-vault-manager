@@ -4,7 +4,7 @@ import { ShieldCheck, Users, ClipboardCheck, ArrowRight, Check, Folder, Search, 
 const products = [
   {
     slug: "vault",
-    name: "Proofza Vault",
+    name: "Proofexa Vault",
     color: "emerald",
     icon: ShieldCheck,
     desc: "Centralise every piece of audit evidence into one searchable evidence library.",
@@ -12,7 +12,7 @@ const products = [
   },
   {
     slug: "owners",
-    name: "Proofza Owners",
+    name: "Proofexa Owners",
     color: "amber",
     icon: Users,
     desc: "Assign evidence owners, monitor responsibilities and eliminate missing documentation.",
@@ -20,7 +20,7 @@ const products = [
   },
   {
     slug: "audit",
-    name: "Proofza Audit",
+    name: "Proofexa Audit",
     color: "navy",
     icon: ClipboardCheck,
     desc: "Track audit readiness, monitor framework coverage and identify missing controls.",

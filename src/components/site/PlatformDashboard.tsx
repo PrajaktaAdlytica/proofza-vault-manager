@@ -14,7 +14,7 @@ export function PlatformDashboard() {
             <aside className="col-span-12 md:col-span-2 bg-navy text-white/80 p-4 space-y-1">
               <div className="flex items-center gap-2 mb-6 px-2">
                 <Shield className="w-5 h-5 text-emerald" />
-                <span className="text-white font-medium">Proofza</span>
+                <span className="text-white font-medium">Proofexa</span>
               </div>
               {[
                 { icon: LayoutDashboard, name: "Dashboard", active: true },

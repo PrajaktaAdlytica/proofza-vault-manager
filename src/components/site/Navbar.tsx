@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import logoUrl from "@/assets/proofza-logo.svg?url";
+import logoUrl from "@/assets/proofexa-logo.svg?url";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,7 +10,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-hairline">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoUrl} alt="Proofza" className="h-7 w-auto" />
+          <img src={logoUrl} alt="Proofexa" className="h-7 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-8 text-[15px] text-slate">
           <Link to="/" className="hover:text-navy transition-colors">Home</Link>
@@ -22,9 +22,9 @@ export function Navbar() {
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-72">
                 <div className="bg-white border border-hairline rounded-xl shadow-xl p-2 animate-fade-up">
                   {[
-                    { to: "/products/vault", name: "Proofza Vault", desc: "Centralised evidence library", dot: "bg-emerald" },
-                    { to: "/products/owners", name: "Proofza Owners", desc: "Ownership & assignments", dot: "bg-amber" },
-                    { to: "/products/audit", name: "Proofza Audit", desc: "Readiness tracking", dot: "bg-navy" },
+                    { to: "/products/vault", name: "Proofexa Vault", desc: "Centralised evidence library", dot: "bg-emerald" },
+                    { to: "/products/owners", name: "Proofexa Owners", desc: "Ownership & assignments", dot: "bg-amber" },
+                    { to: "/products/audit", name: "Proofexa Audit", desc: "Readiness tracking", dot: "bg-navy" },
                   ].map((p) => (
                     <Link key={p.to} to={p.to} className="flex items-start gap-3 p-3 rounded-lg hover:bg-alt transition-colors">
                       <span className={`mt-1 w-2 h-2 rounded-full ${p.dot}`} />
@@ -53,9 +53,9 @@ export function Navbar() {
       {open && (
         <div className="lg:hidden border-t border-hairline px-6 py-4 space-y-3 bg-white">
           <Link to="/" className="block py-1 text-slate">Home</Link>
-          <Link to="/products/vault" className="block py-1 text-slate">Proofza Vault</Link>
-          <Link to="/products/owners" className="block py-1 text-slate">Proofza Owners</Link>
-          <Link to="/products/audit" className="block py-1 text-slate">Proofza Audit</Link>
+          <Link to="/products/vault" className="block py-1 text-slate">Proofexa Vault</Link>
+          <Link to="/products/owners" className="block py-1 text-slate">Proofexa Owners</Link>
+          <Link to="/products/audit" className="block py-1 text-slate">Proofexa Audit</Link>
           <a href="/#pricing" className="block py-1 text-slate">Pricing</a>
           <a href="/#about" className="block py-1 text-slate">About</a>
           <Link to="/signin" className="block py-1 text-slate">Sign In</Link>

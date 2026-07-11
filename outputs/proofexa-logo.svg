@@ -1,0 +1,28 @@
+<svg width="620" height="132" viewBox="0 0 620 132" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Proofexa">
+  <defs>
+    <linearGradient id="proofexaBFrame" x1="20" y1="18" x2="112" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123A6F"/>
+      <stop offset="1" stop-color="#061C3D"/>
+    </linearGradient>
+    <linearGradient id="proofexaBFlow" x1="40" y1="32" x2="98" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18C78C"/>
+      <stop offset="1" stop-color="#05A86F"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="96" height="96" rx="27" fill="url(#proofexaBFrame)"/>
+  <path d="M42 42C42 37.58 45.58 34 50 34H86C90.42 34 94 37.58 94 42V90C94 94.42 90.42 98 86 98H50C45.58 98 42 94.42 42 90V42Z" fill="#F8FBFF" opacity="0.98"/>
+  <path d="M54 50H82" stroke="#123A6F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M54 65H75" stroke="#123A6F" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+  <path d="M54 80H83" stroke="#123A6F" stroke-width="5" stroke-linecap="round" opacity="0.48"/>
+  <path d="M35 54H42" stroke="#18C78C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M35 78H42" stroke="#18C78C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M94 54H101" stroke="#18C78C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M94 78H101" stroke="#18C78C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M34 54C31.24 54 29 56.24 29 59V73C29 75.76 31.24 78 34 78" stroke="url(#proofexaBFlow)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M102 54C104.76 54 107 56.24 107 59V73C107 75.76 104.76 78 102 78" stroke="url(#proofexaBFlow)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="29" cy="66" r="5" fill="#E6A833"/>
+  <circle cx="107" cy="66" r="5" fill="#18C78C"/>
+  <path d="M66 98V108" stroke="#18C78C" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="66" cy="112" r="5" fill="#18C78C"/>
+  <text x="142" y="88" fill="#082B5A" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="760" letter-spacing="-1">Proofexa</text>
+</svg>

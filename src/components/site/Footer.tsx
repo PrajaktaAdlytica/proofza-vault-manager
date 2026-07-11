@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import logoUrl from "@/assets/proofza-logo.svg?url";
+import logoUrl from "@/assets/proofexa-logo.svg?url";
 
 export function Footer() {
   const cols = [
     { title: "Product", links: [
-      { name: "Proofza Vault", to: "/products/vault" },
-      { name: "Proofza Owners", to: "/products/owners" },
-      { name: "Proofza Audit", to: "/products/audit" },
+      { name: "Proofexa Vault", to: "/products/vault" },
+      { name: "Proofexa Owners", to: "/products/owners" },
+      { name: "Proofexa Audit", to: "/products/audit" },
       { name: "Pricing", to: "/#pricing" },
     ]},
     { title: "Solutions", links: [
@@ -33,16 +33,16 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-6">
           <div className="lg:col-span-2">
-            <img src={logoUrl} alt="Proofza" className="h-7 w-auto mb-5" />
+            <img src={logoUrl} alt="Proofexa" className="h-7 w-auto mb-5" />
             <p className="text-sm text-slate-mute max-w-xs leading-relaxed">
               Evidence operations platform for compliance teams preparing SOC 2, ISO 27001, GDPR and HIPAA certifications.
             </p>
             <div className="mt-6 text-sm text-slate-mute space-y-1">
-              <div className="text-navy font-medium">Proofza Sp. z o.o.</div>
+              <div className="text-navy font-medium">Proofexa Sp. z o.o.</div>
               <div>Prosta 70</div>
               <div>00-838 Warsaw, Poland</div>
               <div className="pt-2">
-                <a href="mailto:hello@proofza.io" className="hover:text-navy transition-colors">hello@proofza.io</a>
+                <a href="mailto:hello@proofexa.com" className="hover:text-navy transition-colors">hello@proofexa.com</a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-14 pt-6 border-t border-hairline flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-mute">
-          <div>© {new Date().getFullYear()} Proofza Sp. z o.o. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Proofexa Sp. z o.o. All rights reserved.</div>
           <div className="flex gap-4">
             <span>SOC 2 Type II</span>
             <span>ISO 27001</span>
